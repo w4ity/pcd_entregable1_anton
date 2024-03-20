@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>96</x>
-      <y>296</y>
+      <y>280</y>
       <w>104</w>
       <h>64</h>
     </coordinates>
@@ -21,7 +21,7 @@ DIS
     <id>UMLClass</id>
     <coordinates>
       <x>304</x>
-      <y>264</y>
+      <y>248</y>
       <w>168</w>
       <h>152</h>
     </coordinates>
@@ -40,8 +40,8 @@ del_asignatura()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>304</x>
-      <y>736</y>
+      <x>312</x>
+      <y>720</y>
       <w>168</w>
       <h>112</h>
     </coordinates>
@@ -60,31 +60,31 @@ del_asignatura()</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>160</x>
-      <y>488</y>
+      <y>472</y>
       <w>168</w>
       <h>152</h>
     </coordinates>
-    <panel_attributes>PROF. ASOCIADO
+    <panel_attributes>PROF_ASOCIADO
 --
 +trabajo_externo:str
 --
-+get_trabajo_experno()</panel_attributes>
++get_trabajo_externo()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>720</y>
+      <y>704</y>
       <w>216</w>
       <h>128</h>
     </coordinates>
     <panel_attributes>ESTUDIANTE
 --
++nombre
 +asignaturas_matric:list(ASIGNATURA)
 --
 +add_estud()
-+del_estud()
 +add_asignatura()
 +del_asignatura()
 +asignaturas()</panel_attributes>
@@ -94,37 +94,21 @@ del_asignatura()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>208</x>
-      <y>776</y>
-      <w>112</w>
+      <y>760</y>
+      <w>120</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 
 m1=1..m
 m2=1..n</panel_attributes>
-    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>432</x>
-      <y>488</y>
-      <w>168</w>
-      <h>152</h>
-    </coordinates>
-    <panel_attributes>PROF. TITULAR
---
-+area_investigacion:str
---
-+get_area_inv()
-+modificar_area_inv()</panel_attributes>
-    <additional_attributes/>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>368</x>
-      <y>408</y>
+      <y>392</y>
       <w>24</w>
       <h>344</h>
     </coordinates>
@@ -134,30 +118,8 @@ m2=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>424</x>
-      <y>632</y>
-      <w>80</w>
-      <h>120</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>80.0;10.0;10.0;130.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>248</x>
-      <y>632</y>
-      <w>88</w>
-      <h>120</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;90.0;130.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
       <x>192</x>
-      <y>312</y>
+      <y>296</y>
       <w>128</w>
       <h>40</h>
     </coordinates>
@@ -172,7 +134,7 @@ m2=0..n
     <id>Relation</id>
     <coordinates>
       <x>48</x>
-      <y>80</y>
+      <y>64</y>
       <w>264</w>
       <h>656</h>
     </coordinates>
@@ -183,7 +145,7 @@ m2=0..n
     <id>Relation</id>
     <coordinates>
       <x>224</x>
-      <y>408</y>
+      <y>392</y>
       <w>120</w>
       <h>96</h>
     </coordinates>
@@ -194,18 +156,18 @@ m2=0..n
     <id>Relation</id>
     <coordinates>
       <x>424</x>
-      <y>408</y>
-      <w>96</w>
-      <h>96</h>
+      <y>392</y>
+      <w>136</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;30.0;100.0;30.0;100.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0;150.0;30.0;150.0;120.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>368</x>
-      <y>160</y>
+      <y>144</y>
       <w>24</w>
       <h>120</h>
     </coordinates>
@@ -216,7 +178,7 @@ m2=0..n
     <id>UMLClass</id>
     <coordinates>
       <x>296</x>
-      <y>16</y>
+      <y>0</y>
       <w>168</w>
       <h>152</h>
     </coordinates>
@@ -233,5 +195,79 @@ m2=0..n
 +get_sexo()
 </panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>448</x>
+      <y>488</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>PROF_TITULAR
+--
++area_investigacion:str
+--
++get_area_inv()
++modificar_area_inv()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>504</y>
+      <w>168</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>Universidad
+--
+list_alumno
+list_prof
+list_asignatura
+--
+nuevo_alumno (entra a la clase)
+eliminar_alumno(dni)
+crear_profesor_titular(dni)
+crear_profesor_asociado(dni)
+eliminar_profesor(dni)
+buscar_alumno(dni)
+buscar_profesor(dni)
+nueva_asignatura(nombre)
+eliminar_asignatura(nombre)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>464</x>
+      <y>320</y>
+      <w>272</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>320.0;230.0;320.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>104</x>
+      <y>688</y>
+      <w>664</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>810.0;10.0;810.0;300.0;10.0;300.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>376</x>
+      <y>688</y>
+      <w>328</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>390.0;10.0;390.0;220.0;10.0;220.0;10.0;180.0</additional_attributes>
   </element>
 </diagram>
