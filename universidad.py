@@ -22,6 +22,11 @@ class Persona:
         return self.sexo
 
 
+class Departamento(Enum):
+    DIIC = 1
+    DITEC = 2
+    DIS = 3
+
 class Profesor(Persona):
     def __init__(self, nombre,dni, direccion, sexo, asignaturas, departamento):
         super().__init__(nombre, dni, direccion, sexo)
@@ -47,10 +52,6 @@ class Profesor(Persona):
         self.asignaturas.remove(asignatura)
 
 
-class Departamento(Enum):
-    DIIC = 1
-    DITEC = 2
-    DIS = 3
 
 
 class Prof_Asociado(Profesor):
