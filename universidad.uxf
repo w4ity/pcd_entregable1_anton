@@ -29,6 +29,7 @@ DIS
 --
 +persona:str(PERSONA)
 +asignaturas: list(ASIGNATURA)
++departamento: list(DEPARTAMENTO)
 --
 add_miembro()
 del_miembro()
