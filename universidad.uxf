@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>6</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>96</x>
-      <y>282</y>
-      <w>78</w>
-      <h>48</h>
+      <x>120</x>
+      <y>350</y>
+      <w>130</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>DEPARTAMENTO
 --
@@ -20,10 +20,10 @@ DIS
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>252</x>
-      <y>258</y>
-      <w>126</w>
-      <h>114</h>
+      <x>380</x>
+      <y>310</y>
+      <w>210</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>PROFESOR
 --
@@ -41,10 +41,10 @@ del_asignatura()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>258</x>
-      <y>612</y>
-      <w>126</w>
-      <h>84</h>
+      <x>390</x>
+      <y>900</y>
+      <w>210</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>ASIGNATURA
 --
@@ -60,10 +60,10 @@ del_asignatura()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>144</x>
-      <y>426</y>
-      <w>126</w>
-      <h>114</h>
+      <x>200</x>
+      <y>590</y>
+      <w>210</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>PROF_ASOCIADO
 --
@@ -75,10 +75,10 @@ del_asignatura()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>24</x>
-      <y>600</y>
-      <w>162</w>
-      <h>96</h>
+      <x>0</x>
+      <y>880</y>
+      <w>270</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>ESTUDIANTE
 --
@@ -93,10 +93,10 @@ del_asignatura()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>180</x>
-      <y>642</y>
-      <w>90</w>
-      <h>30</h>
+      <x>260</x>
+      <y>950</y>
+      <w>150</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 
@@ -107,10 +107,10 @@ m2=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>366</y>
-      <w>18</w>
-      <h>258</h>
+      <x>460</x>
+      <y>490</y>
+      <w>30</w>
+      <h>430</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;410.0</additional_attributes>
@@ -118,10 +118,10 @@ m2=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>168</x>
-      <y>294</y>
-      <w>96</w>
-      <h>30</h>
+      <x>240</x>
+      <y>370</y>
+      <w>160</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1=1
@@ -134,9 +134,9 @@ m2=0..n
     <id>Relation</id>
     <coordinates>
       <x>60</x>
-      <y>120</y>
-      <w>198</w>
-      <h>492</h>
+      <y>80</y>
+      <w>330</w>
+      <h>820</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>310.0;10.0;20.0;10.0;10.0;800.0</additional_attributes>
@@ -144,10 +144,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>192</x>
-      <y>366</y>
-      <w>90</w>
-      <h>72</h>
+      <x>280</x>
+      <y>490</y>
+      <w>150</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>130.0;10.0;130.0;30.0;10.0;30.0;10.0;100.0</additional_attributes>
@@ -155,10 +155,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>342</x>
-      <y>366</y>
-      <w>102</w>
-      <h>84</h>
+      <x>530</x>
+      <y>490</y>
+      <w>170</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;30.0;150.0;30.0;150.0;120.0</additional_attributes>
@@ -166,10 +166,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
+      <x>460</x>
       <y>180</y>
-      <w>18</w>
-      <h>90</h>
+      <w>30</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
@@ -177,10 +177,10 @@ m2=0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>246</x>
-      <y>72</y>
-      <w>126</w>
-      <h>114</h>
+      <x>370</x>
+      <y>0</y>
+      <w>210</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>PERSONA
 --
@@ -199,10 +199,10 @@ m2=0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>360</x>
-      <y>438</y>
-      <w>126</w>
-      <h>114</h>
+      <x>560</x>
+      <y>610</y>
+      <w>210</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>PROF_TITULAR
 --
@@ -215,10 +215,10 @@ m2=0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>504</x>
-      <y>450</y>
-      <w>168</w>
-      <h>144</h>
+      <x>800</x>
+      <y>630</y>
+      <w>280</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>Universidad
 --
@@ -264,10 +264,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>372</x>
-      <y>312</y>
-      <w>204</w>
-      <h>150</h>
+      <x>580</x>
+      <y>400</y>
+      <w>340</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>320.0;230.0;320.0;10.0;10.0;10.0</additional_attributes>
@@ -275,10 +275,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>102</x>
-      <y>588</y>
-      <w>498</w>
-      <h>192</h>
+      <x>130</x>
+      <y>860</y>
+      <w>830</w>
+      <h>320</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>810.0;10.0;810.0;300.0;10.0;300.0;10.0;180.0</additional_attributes>
@@ -286,10 +286,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>306</x>
-      <y>588</y>
-      <w>246</w>
-      <h>144</h>
+      <x>470</x>
+      <y>860</y>
+      <w>410</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>390.0;10.0;390.0;220.0;10.0;220.0;10.0;180.0</additional_attributes>

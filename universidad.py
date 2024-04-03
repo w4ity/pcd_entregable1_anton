@@ -248,7 +248,7 @@ if __name__ == "__main__":
     # Eliminar una asignatura
     mi_universidad.eliminar_asignatura("Programación Avanzada")
 
-
+#caso de uso con la personita y ovalos 
 
 
 
