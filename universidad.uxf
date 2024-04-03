@@ -228,7 +228,7 @@ m2=0..n
 --
 
 +nuevo_alumno(Estudiante())
-+add_asignatura_alumno(dni, )
++add_asignatura_alumno(dni, asignatura)
 
 +del_asignatura_alumno(dni)
 +eliminar_alumno(dni)
