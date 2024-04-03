@@ -99,12 +99,12 @@ class Asignatura:
     def modif_codigo(self, codigo):
         self.codigo = codigo
 
-class Estudiante:
-    def __init__(self, nombre):
-        self.nombre = nombre
+class Estudiante(Persona):
+    def __init__(self, nombre, dni, direccion, sexo):
+        super().__init__(nombre, dni, direccion, sexo)
         self.asignaturas_matriculadas = []
 
-    def add_estud(self, nombre):
+    def add_estud(self, nombre, dni, direccion, sexo): #################333
         print(f"Se ha añadido al estudiante {nombre}")
 
     def del_estud(self, nombre):
@@ -131,11 +131,9 @@ class Universidad:
         self.asignaturas = []
 
     def nuevo_alumno(self, nombre, dni, direccion, sexo):
-        nuevo_estudiante = Estudiante(nombre)
-        nuevo_estudiante_persona = Persona(nombre, dni, direccion, sexo)
-        self.estudiantes.append(nuevo_estudiante)
+        nuevo_estudiante = Estudiante(nombre, dni, direccion, sexo)
+        self.alumnos.append(nuevo_estudiante)
         print(f'Se ha añadido al estudiante {nombre} a la universidad')
-
 
     def eliminar_alumno(self, dni):
         estudiante_eliminado = None
@@ -147,6 +145,93 @@ class Universidad:
                 break
         if estudiante_eliminado is None:
             print(f'No se encontró ningún estudiante con el DNI {dni}')
+    
+    def crear_profesor_titular(self, dni, nombre, direccion, sexo, asignaturas, departamento, area_investigacion):
+        nuevo_profesor_titular = Prof_Titular(nombre, dni, direccion, sexo, asignaturas, departamento, area_investigacion)
+        self.profesores.append(nuevo_profesor_titular)
+        print(f'Se ha creado un nuevo profesor titular con DNI {dni}')
+
+    def crear_profesor_asociado(self, dni, nombre, direccion, sexo, asignaturas, departamento, trabajo_externo):
+        nuevo_profesor_asociado = Prof_Asociado(nombre, dni, direccion, sexo, asignaturas, departamento, trabajo_externo)
+        self.profesores.append(nuevo_profesor_asociado)
+        print(f'Se ha creado un nuevo profesor asociado con DNI {dni}')
+
+    def eliminar_profesor(self, dni):
+        profesor_eliminado = None
+        for profesor in self.profesores:
+            if profesor.get_dni() == dni:
+                profesor_eliminado = profesor
+                self.profesores.remove(profesor)
+                print(f'Se ha eliminado al profesor con DNI {dni}')
+                break
+        if profesor_eliminado is None:
+            print(f'No se encontró ningún profesor con el DNI {dni}')
+
+    def buscar_alumno(self, dni):
+        for alumno in self.alumnos:
+            if alumno.get_dni() == dni:
+                return alumno
+        print(f'No se encontró ningún alumno con el DNI {dni}')
+        return None
+
+    def buscar_profesor(self, dni):
+        for profesor in self.profesores:
+            if profesor.get_dni() == dni:
+                return profesor
+        print(f'No se encontró ningún profesor con el DNI {dni}')
+        return None
+
+    def nueva_asignatura(self, nombre, codigo):
+        nueva_asignatura = Asignatura(nombre, codigo)
+        self.asignaturas.append(nueva_asignatura)
+        print(f'Se ha creado una nueva asignatura: {nombre}')
+
+    def eliminar_asignatura(self, nombre):
+        asignatura_eliminada = None
+        for asignatura in self.asignaturas:
+            if asignatura.get_nombre() == nombre:
+                asignatura_eliminada = asignatura
+                self.asignaturas.remove(asignatura)
+                print(f'Se ha eliminado la asignatura: {nombre}')
+                break
+        if asignatura_eliminada is None:
+            print(f'No se encontró ninguna asignatura con el nombre: {nombre}')
+
+
+if __name__ == "__main__":
+    # Crear una instancia de la clase Universidad
+    mi_universidad = Universidad()
+
+    # Crear algunos alumnos
+    mi_universidad.nuevo_alumno("Juan Perez", "12345678A", "Calle Principal 123", "M")
+    mi_universidad.nuevo_alumno("Maria Lopez", "87654321B", "Avenida Secundaria 456", "F")
+
+    # Crear algunos profesores
+    mi_universidad.crear_profesor_titular("11111111X", "Pedro Ramirez", "Calle de los Profesores 1", "M", ["Matemáticas"], Departamento.DIIC, "Álgebra")
+    mi_universidad.crear_profesor_asociado("22222222Y", "Ana Garcia", "Calle de los Profesores 2", "F", ["Física"], Departamento.DITEC, "Investigación en Física Cuántica")
+
+    # Crear algunas asignaturas
+    mi_universidad.nueva_asignatura("Programación Avanzada", "PA101")
+    mi_universidad.nueva_asignatura("Diseño de Algoritmos", "DA202")
+
+    # Eliminar un alumno
+    mi_universidad.eliminar_alumno("12345678A")
+
+    # Eliminar un profesor
+    mi_universidad.eliminar_profesor("11111111X")
+
+    # Buscar un alumno
+    alumno_buscado = mi_universidad.buscar_alumno("87654321B")
+    if alumno_buscado:
+        print(f"Alumno encontrado: {alumno_buscado.get_nombre()}")
+
+    # Buscar un profesor
+    profesor_buscado = mi_universidad.buscar_profesor("22222222Y")
+    if profesor_buscado:
+        print(f"Profesor encontrado: {profesor_buscado.get_nombre()}")
+
+    # Eliminar una asignatura
+    mi_universidad.eliminar_asignatura("Programación Avanzada")
 
 
 

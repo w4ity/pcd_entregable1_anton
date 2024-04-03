@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>8</zoom_level>
+  <zoom_level>12</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>96</x>
-      <y>280</y>
-      <w>104</w>
-      <h>64</h>
+      <x>144</x>
+      <y>420</y>
+      <w>156</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>DEPARTAMENTO
 --
@@ -20,10 +20,10 @@ DIS
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>304</x>
-      <y>248</y>
-      <w>168</w>
-      <h>152</h>
+      <x>456</x>
+      <y>372</y>
+      <w>252</w>
+      <h>228</h>
     </coordinates>
     <panel_attributes>PROFESOR
 --
@@ -41,10 +41,10 @@ del_asignatura()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>312</x>
-      <y>720</y>
-      <w>168</w>
-      <h>112</h>
+      <x>468</x>
+      <y>1080</y>
+      <w>252</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>ASIGNATURA
 --
@@ -60,10 +60,10 @@ del_asignatura()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
-      <y>472</y>
-      <w>168</w>
-      <h>152</h>
+      <x>240</x>
+      <y>708</y>
+      <w>252</w>
+      <h>228</h>
     </coordinates>
     <panel_attributes>PROF_ASOCIADO
 --
@@ -76,9 +76,9 @@ del_asignatura()</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>704</y>
-      <w>216</w>
-      <h>128</h>
+      <y>1056</y>
+      <w>324</w>
+      <h>192</h>
     </coordinates>
     <panel_attributes>ESTUDIANTE
 --
@@ -94,10 +94,10 @@ del_asignatura()</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>208</x>
-      <y>760</y>
-      <w>120</w>
-      <h>40</h>
+      <x>312</x>
+      <y>1140</y>
+      <w>180</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 
@@ -108,10 +108,10 @@ m2=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>368</x>
-      <y>392</y>
-      <w>24</w>
-      <h>344</h>
+      <x>552</x>
+      <y>588</y>
+      <w>36</w>
+      <h>516</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;410.0</additional_attributes>
@@ -119,10 +119,10 @@ m2=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>192</x>
-      <y>296</y>
-      <w>128</w>
-      <h>40</h>
+      <x>288</x>
+      <y>444</y>
+      <w>192</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1=1
@@ -134,10 +134,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>48</x>
-      <y>64</y>
-      <w>264</w>
-      <h>656</h>
+      <x>72</x>
+      <y>96</y>
+      <w>396</w>
+      <h>984</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>310.0;10.0;20.0;10.0;10.0;800.0</additional_attributes>
@@ -145,10 +145,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>392</y>
-      <w>120</w>
-      <h>96</h>
+      <x>336</x>
+      <y>588</y>
+      <w>180</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>130.0;10.0;130.0;30.0;10.0;30.0;10.0;100.0</additional_attributes>
@@ -156,10 +156,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>424</x>
-      <y>392</y>
-      <w>136</w>
-      <h>112</h>
+      <x>636</x>
+      <y>588</y>
+      <w>204</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;30.0;150.0;30.0;150.0;120.0</additional_attributes>
@@ -167,10 +167,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>368</x>
-      <y>144</y>
-      <w>24</w>
-      <h>120</h>
+      <x>552</x>
+      <y>216</y>
+      <w>36</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
@@ -178,10 +178,10 @@ m2=0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>296</x>
+      <x>444</x>
       <y>0</y>
-      <w>168</w>
-      <h>152</h>
+      <w>252</w>
+      <h>228</h>
     </coordinates>
     <panel_attributes>PERSONA
 --
@@ -200,10 +200,10 @@ m2=0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>448</x>
-      <y>488</y>
-      <w>168</w>
-      <h>152</h>
+      <x>672</x>
+      <y>732</y>
+      <w>252</w>
+      <h>228</h>
     </coordinates>
     <panel_attributes>PROF_TITULAR
 --
@@ -216,10 +216,10 @@ m2=0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>640</x>
-      <y>504</y>
-      <w>168</w>
-      <h>192</h>
+      <x>960</x>
+      <y>756</y>
+      <w>252</w>
+      <h>288</h>
     </coordinates>
     <panel_attributes>Universidad
 --
@@ -241,10 +241,10 @@ eliminar_asignatura(nombre)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>464</x>
-      <y>320</y>
-      <w>272</w>
-      <h>200</h>
+      <x>696</x>
+      <y>480</y>
+      <w>408</w>
+      <h>300</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>320.0;230.0;320.0;10.0;10.0;10.0</additional_attributes>
@@ -252,10 +252,10 @@ eliminar_asignatura(nombre)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>104</x>
-      <y>688</y>
-      <w>664</w>
-      <h>256</h>
+      <x>156</x>
+      <y>1032</y>
+      <w>996</w>
+      <h>384</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>810.0;10.0;810.0;300.0;10.0;300.0;10.0;180.0</additional_attributes>
@@ -263,10 +263,10 @@ eliminar_asignatura(nombre)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>376</x>
-      <y>688</y>
-      <w>328</w>
-      <h>192</h>
+      <x>564</x>
+      <y>1032</y>
+      <w>492</w>
+      <h>288</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>390.0;10.0;390.0;220.0;10.0;220.0;10.0;180.0</additional_attributes>
