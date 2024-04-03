@@ -104,12 +104,6 @@ class Estudiante(Persona):
         super().__init__(nombre, dni, direccion, sexo)
         self.asignaturas_matriculadas = []
 
-    def add_estud(self, nombre, dni, direccion, sexo): #################333
-        print(f"Se ha añadido al estudiante {nombre}")
-
-    def del_estud(self, nombre):
-        print(f"Se ha eliminado al estudiante {nombre}")
-
     def add_asignatura(self, asignatura):
         self.asignaturas_matriculadas.append(asignatura)
         print(f"La asignatura '{asignatura.get_nombre()}' ha sido añadida")
@@ -118,7 +112,7 @@ class Estudiante(Persona):
         self.asignaturas_matriculadas.remove(asignatura)
         print(f"La asignatura '{asignatura.get_nombre()}' ha sido eliminada")
 
-    def asignaturas(self):
+    def asignaturas_matriculado(self):
         print("Asignaturas matriculadas:")
         for asignatura in self.asignaturas_matriculadas:
             print(f"- {asignatura.get_nombre()} ({asignatura.get_codigo()})")
@@ -134,6 +128,27 @@ class Universidad:
         nuevo_estudiante = Estudiante(nombre, dni, direccion, sexo)
         self.alumnos.append(nuevo_estudiante)
         print(f'Se ha añadido al estudiante {nombre} a la universidad')
+
+
+    def add_asignatura_alumno(self, dni, asignatura):
+        for estudiante in self.alumnos:
+            if estudiante.get_dni() == dni:
+                self.alumnos.add_asigntura(asignatura)
+                print(f'Se ha añadido a {dni} la asignatura {asignatura}')
+
+
+    def del_asignatura_alumno(self, dni, asignatura):
+        for estudiante in self.alumnos:
+            if estudiante.get_dni() == dni:
+                self.alumnos.del_asigntura(asignatura)
+                print(f'Se ha añadido a {dni} la asignatura {asignatura}')
+
+
+    def alumno_asignaturas_matriculado(self, dni):
+        for estudiante in self.alumnos:
+            if estudiante.get_dni() == dni:
+                self.alumnos.asignaturas_matriculado()
+                break
 
     def eliminar_alumno(self, dni):
         estudiante_eliminado = None
