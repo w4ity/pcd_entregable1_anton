@@ -19,7 +19,6 @@ class Persona:
     def get_sexo(self):
         return self.sexo
 
-
 class Departamento(Enum):
     DIIC = 1
     DITEC = 2
@@ -68,7 +67,6 @@ class Profesor(Persona):
         for asignatura in self.asignaturas:
             print(f"- {asignatura.get_nombre()} ({asignatura.get_codigo()})")    
 
-
 class Prof_Asociado(Profesor):
     def __init__(self, nombre, dni, direccion, sexo, asignaturas, departamento, trabajo_externo):
         super().__init__(nombre, dni, direccion, sexo, asignaturas, departamento)
@@ -77,7 +75,6 @@ class Prof_Asociado(Profesor):
     def get_trabajo_externo(self):
         return self.trabajo_externo
     
-
 class Prof_Titular(Profesor):
     def __init__(self, nombre, dni, direccion, sexo, asignaturas, departamento, area_investigacion):
         super().__init__(nombre, dni, direccion, sexo, asignaturas, departamento)
@@ -230,8 +227,8 @@ class Universidad:
                 return
         print(f'No se encontró ninguna asignatura con el nombre: {nombre}')
 
+if __name__ == "__main__": #Codigo de prueba con casos que deben fallar y los que no
 
-if __name__ == "__main__": #Codigo de prueba con casos que deben fallar y los que no.
     # Crear una instancia de Universidad
     universidad = Universidad()
 
@@ -270,18 +267,6 @@ if __name__ == "__main__": #Codigo de prueba con casos que deben fallar y los qu
 
     # Eliminar una asignatura
     universidad.eliminar_asignatura("Biología")
-
-
-
-
-#caso de uso con la personita y ovalos 
-
-
-
-    #diagrama de uso:  
-    # un alumno se matricula meter lista 
-    #contratacion del profesor
-    #cambio del departamenteo
 
 
      
